@@ -3,7 +3,9 @@ Curso de Python completo: PySide6, Django, Selenium, Regexp, Testes, TDD, POO, D
 
 ***
 
-Para acessar curso, [clique aqui](https://www.udemy.com/share/101ufc3@NCUhWhOAzYAh9TCLfF6L1oaQrbIfeAYaUv65krSVpwyzATvwRfxkSdD1HNYkn54TcA==/).
+Para acessar o curso e adquirir, [clique aqui](https://www.udemy.com/course/python-3-do-zero-ao-avancado/).
+
+Para acessar as aulas, [clique aqui](https://www.udemy.com/share/101ufc3@NCUhWhOAzYAh9TCLfF6L1oaQrbIfeAYaUv65krSVpwyzATvwRfxkSdD1HNYkn54TcA==/).
 
 ***
 
