@@ -12,7 +12,7 @@ while True:
     numero_2 = input('Digite o segundo número: ')
     operador = input('Digite o operador (+-/*): ')
     
-    numeros_validos = None
+    numeros_validos = None # isso é uma flag
     numero_1_float = 0
     numero_2_float = 0
 
