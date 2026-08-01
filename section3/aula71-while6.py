@@ -29,6 +29,18 @@ i = 0
 qtd_apareceu_mais_vezes = 0
 letra_apareceu_mais_vezes = ''
 
+'''
+Analisar as letras atuais:
+
+Variavel: maior
+se a qtd letra atual for maior que a anterior: a letra atual continua sendo a maior
+
+se a qtd letra atual for menor que a anterior: a letra anterior vira a maior
+
+if qtd indice atual > 
+
+'''
+
 while i < len(frase):
     letra_atual = frase[i]
     qtd_letra = frase.count(letra_atual)
