@@ -13,4 +13,4 @@ Para acessar as aulas, [clique aqui](https://www.udemy.com/share/101ufc3@NCUhWhO
 
 ***
 
-*141 horas de curso.*
+*141,5 horas de curso.*
