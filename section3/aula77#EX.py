@@ -11,7 +11,25 @@ Faça um jogo para o usuário adivinhar qual a palavra secreta:
 
 '''
 
-palavra_secreta = 'Macaco'
+# Tentativa de Solução:
+
+'''
+Ter uma palavra predefinida pelo programa
+
+input para o usuario digitar apenas uma letra
+    tratamento do input:
+        1. apenas letras
+        2. apenas uma letra.
+
+Se a letra estiver na palavra: exibir a letra acertada com asteriscos. Ex: a -> *a*a** (macaco)
+
+Se a letra não estiver na palavra: exibir apenas os asteriscos.
+
+Fazer a contagem de tentativas do usuario
+
+'''
+
+palavra_secreta = 'macaco'
 
 while True:
 
@@ -21,13 +39,13 @@ while True:
         print('Digite apenas uma letra!')
         continue
 
-    for i in range(palavra_secreta):
-        ...
+    # for i in range(palavra_secreta):
+    #     ...
+
+    if letra_usuario in palavra_secreta:
+        print(letra_usuario)
 
     if letra_usuario not in palavra_secreta:
         print('*')
         continue
-
-    if letra_usuario in palavra_secreta:
-        print(letra_usuario)
 
