@@ -30,9 +30,9 @@ for i in numeros:
 
 print('------------------------------------------')
 
-numeros = range(0, 10, 2)
+numeros = range(10, 0, -1)
 
 for i in numeros:
-    print(i)        # 0 ao 9 pulando de 2 em 2
+    print(i)        # 10 ao 1, passo -1
 
 print('------------------------------------------')
