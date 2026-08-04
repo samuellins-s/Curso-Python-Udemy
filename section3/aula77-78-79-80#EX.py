@@ -31,19 +31,24 @@ Se a letra não estiver na palavra: exibir apenas os asteriscos.
 Fazer a contagem de tentativas do usuario
 
 '''
+import os
 
 palavra_secreta = 'macaco'
 letras_acertadas = ''
 numero_tentativas = 0
 
 while True:
-
+    
     letra_usuario = input('Digite apenas uma letra: ')
 
     numero_tentativas += 1
 
     if len(letra_usuario) > 1:
         print('Digite apenas uma letra!')
+        continue
+
+    if not letra_usuario.isalpha():
+        print('Digite apenas letras!')
         continue
 
     if letra_usuario in palavra_secreta:
@@ -61,6 +66,12 @@ while True:
     print(palava_formada)
 
     if palava_formada == palavra_secreta:
+        
+        os.system('cls') # limpar terminal e depois mostrar o resultado
+
         print('VOCÊ GANHOU!! PARABÉNS')
         print('A palavra secreta era:', palavra_secreta)
         print('Tentativas:', numero_tentativas)
+        # recomeça:
+        letras_acertadas = '' 
+        numero_tentativas = 0
