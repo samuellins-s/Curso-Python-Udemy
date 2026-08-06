@@ -1,6 +1,7 @@
 '''
 Listas são mutáveis
 Função list
+Vários tipos de valores diferentes (str, int, float, bool)
 Métodos úteis: append, insert, pop, del, clear, extend, +
 
 '''
@@ -18,7 +19,7 @@ lista_dentro_de_lista = ['Olá', 321, 5.5, ['Lista 2', 2]]
 print(lista_dentro_de_lista)
 print(lista_dentro_de_lista[-1])
 
-print(lista_dentro_de_lista[0].upper()) # consigo modificar o indice para maiusculo
+print(lista_dentro_de_lista[0].upper()) # consigo modificar o indice para MAIUSCULO (upper)
 
 lista_dentro_de_lista[0] = 'Mudei! Tchau!'
 print(lista_dentro_de_lista)
