@@ -11,37 +11,36 @@ Não permita que o programa quebre com erros de índices inexistentes na lista
         print(indice, item)
 '''
 
+# não precisa do continue pois tem estruturas condicionais (faz ou passa)
+
 import os
 
 lista_compras = []
 
 while True:
+
     mensagem_principal = input('Selecione uma opção:\n[i]nserir [a]pagar [l]istar [s]air: ')
 
     if mensagem_principal == 'i':
         os.system('cls')
+
         inserir = input('Opção [i]nserir escolhida\nDigite o que você quer inserir: ')
         lista_compras.append(inserir)
-        continue
 
     elif mensagem_principal == 'a':
         os.system('cls')
+
         deletar = input('Opção [a]pagar escolhida\nDigite qual índice você quer deletar: ')
 
-        if len(deletar) > 1:
-            print('\nDigite apenas 1 índice por vez\n')
-            continue
-        
-        if not deletar.isdigit():
-            print('\nDigite apenas um número!\n')
-            continue
-
         try:
-            
-
-        deletar_indice_int = int(deletar)
-        del lista_compras[deletar_indice_int]
-        continue
+            deletar_indice_int = int(deletar)
+            del lista_compras[deletar_indice_int]
+        except ValueError:
+            print('Por favor, digite um número inteiro.\n')
+        except IndexError:
+            print('O índice escolhido não está na lista. Por favor, digite novamente.\n')
+        except Exception:
+            print('Ops! Erro desconhecido.\n')
 
     elif mensagem_principal == 'l':
         os.system('cls')
@@ -50,19 +49,19 @@ while True:
             print(f'Opção [l]istar escolhida\n')
             print('Lista vazia!\n')
 
-        print(f'Opção [l]istar escolhida\nConfira a sua lista a seguir:\n')
+        else:
+            print(f'Opção [l]istar escolhida\nConfira a sua lista a seguir:\n')
 
-        for indice, item in enumerate(lista_compras):
-            print(indice, item)
+            for indice, item in enumerate(lista_compras):
+                print(indice, item)
 
-        print()
-        continue
+            print()
 
     elif mensagem_principal == 's':
         os.system('cls')
+
         print('Opção [s]air escolhida\nObrigado, volte sempre!')
         break
 
     else:
         print('Selecione uma das opções anteriores.\n')
-        continue
