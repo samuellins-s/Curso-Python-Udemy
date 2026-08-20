@@ -5,8 +5,8 @@ Crie uma função que multiplica todos os argumentos não nomeados recebidos.
 
 Retorne o valor para uma variável e mostre o valor da variavel.
 
-Crie uma função fala se um numero é par ou impar.
-Retorne se o número e par o ímpar.
+Crie uma função que fala se um numero é par ou impar.
+    Retorne se o número e par o ímpar.
 
 '''
 
