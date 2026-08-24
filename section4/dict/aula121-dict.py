@@ -20,4 +20,4 @@ pessoa = {
 print(pessoa['nome']) # acesso pelo indice (string)
 
 for chave in pessoa: # no indice direto (i) -> pega as chaves
-    print(chave, pessoa[chave]) # para pegar os valores (pessoa[chave])
+    print(chave, pessoa[chave]) # para pegar os valores: (pessoa[chave])
